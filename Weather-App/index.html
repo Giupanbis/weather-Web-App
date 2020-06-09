@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Bongi Weather App</title>
+    <link href="icons/01d.png" rel="icon">
+
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Weather App">
+    <meta property="og:title" content="Weather App">
+    <meta property="og:description" content="I am a professional web designer from Italy. I create beautiful professional websites using best practice accessibility. I enjoy turning complex problems into simple, beautiful and intuitive interface designs">
+    <meta property="og:url" content="https://www.mypersonalsites.it">
+    <meta property="og:image" content="https://www.mypersonalsites.it/img/image.jpg">
+
+    <link rel="stylesheet" href="font/Rimouski.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="app-title">
+            <h1> Bongi Weather </h1>
+        </div>
+        <div class="search-bar" align="center">
+          <form id="request" method="POST">
+            <table style="width: 100%">
+                <td align="left">
+                  <input type="text" id="city" name="city" autocomplete="city" class="search-box" id="request" placeholder="Inserisci una città" title="Compila questo campo.">
+                </td>
+                <td align="right">
+                  <button type="submit" class="button">cerca</button>
+                </td>
+            </table>
+          </form>
+        </div>
+        <div class="notification"> </div>
+        <div class="weather-container">
+            <div class="weather-icon">
+                <img src="icons/unknown.png" alt="">
+            </div>
+            <div class="temperature-value">
+                <p>- °<span>C</span></p>
+            </div>
+            <div class="temperature-description">
+                <p> - </p>
+            </div>
+            <div class="location">
+                <p>-</p>
+            </div>
+            <div class="temperature-min-max">
+            <div class="temperature-min">
+                <h4>min</h4><p>-</p>
+            </div>
+            <div class="temperature-max">
+                <h4>max</h4><p>-</p>
+            </div>
+            </div>
+            <div class="wind">
+            <h2>Vento</h2>
+                <p> - </p>
+            </div>
+                <div class="humidity">
+            <h2>Umidità</h2>
+                <p> - </p>
+            </div>
+            <div class="location-coordinate">
+            <h2>Coordinate</h2>
+            <div class="location-lon-lat">
+            <div class="location-lon">
+                <h4>lon:</h4><p>-</p>
+            </div>
+            <span>|</span>
+            <div class="location-lat">
+                <h4>lat:</h4><p>-</p>
+            </div>
+            </div>
+        </div>
+        <div class="sunrise-sunset">
+        <div class="sunrise">
+          <div class="sunrise2">
+          <img src="icons/01d.png" alt="">
+           <h4>Alba</h4>
+          </div>
+           <p>-</p>
+        </div>
+        <div class="sunset">
+          <div class="sunset2">
+          <img src="icons/01n.png" alt="">
+          <h4>Tramonto</h4>
+          </div>
+         <p>-</p>
+         </div>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+
+      <p>Powered by <a href="https://www.linkedin.com/in/giuseppe-panzuti-bisanti-2a3337154/" target="_blank">Giuseppe Panzuti Bisanti</a></p>
+
+      <div class="social">
+    <a href="https://www.facebook.com/giuseppe.panzutibisanti" target="_blank"><img class="social_icon" src="social/icon_Facebook2.svg" alt=""></a>
+    <a href="mailto:giupanbis@hotmail.it" target="_blank"><img class="social_icon" src="social/icon_gmail2.svg" alt=""></a>
+    <a href="https://www.linkedin.com/in/giuseppe-panzuti-bisanti-2a3337154/" target="_blank"><img class="social_icon2" src="social/icon_Linkedin.svg" alt=""></a>
+    <a href="https://wa.me/393460671045" target="_blank"><img class="social_icon" src="social/icon_Whatsapp2.svg" alt=""></a>
+      </div>
+
+  </footer>
+
+
+    <script src="jQuery.js" rel="text/javascript"></script>
+    <script src="app.js"></script>
+</body>
+</html>

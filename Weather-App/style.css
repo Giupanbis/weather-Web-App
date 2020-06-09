@@ -1,0 +1,337 @@
+*{
+    font-family: "Rimouski";
+}
+
+body{
+    background-image: linear-gradient(to top, #030B17 , #072141);
+    background-attachment: fixed;
+    background-position: top left;
+}
+
+.search-bar{
+	border-radius: 10px;
+	text-align: center;
+  margin: 15px auto;
+	padding: 0px;
+	width: 100%;
+	background-color: #FFF;
+
+	cursor: pointer;
+	transition: box-shadow 0.5s;
+	box-shadow: none;
+}
+
+.search-bar:hover{
+	transition: box-shadow 0.5s;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.search-bar input.search-box{
+	font-size: 16px;
+	padding: 3px;
+  width: 130%;
+	border: none;
+	border-radius: 10px;
+}
+
+.search-bar .button{
+	margin: 0 2px;
+}
+
+button, .button{
+	margin: 0;
+	border-radius: 10px;
+	border: 0;
+	color: #293251;
+  background-color: #F4F9FF;
+	font-size: 20px;
+	min-width: 100px;
+	cursor: pointer;
+}
+
+button:hover, .button:hover{
+	transition: opacity 0.5s;
+	opacity: 0.8;
+}
+
+.container{
+    width: 94%;
+    max-width: 700px;
+    height: auto;
+    background-color: #FFF;
+    box-shadow: 0 7px 9px rgba(0,0,0,0.5);
+
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+
+    border-radius: 10px;
+    padding-bottom : 10px;
+}
+
+.app-title{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+    background-color: #F4F9FF;
+}
+
+.app-title h1{
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+    font-size: 1.4em;
+    color: #F7A71C;
+}
+
+.notification{
+    background-color: #f8d7da;
+    display: none;
+}
+
+.notification p{
+    color: #721c24;
+    font-size: 1.2em;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.weather-container{
+    width: 100%;
+    height: auto;
+    background-color: #F4F9FF;
+}
+
+.weather-icon{
+    width: 100%;
+    height: 128px;
+}
+
+.weather-icon img{
+    display: block;
+    margin: 0 auto;
+}
+
+.temperature-value{
+    width: 100%;
+    height:60px;
+}
+
+.temperature-value p{
+    padding: 0;
+    margin: 0;
+    color: #293251;
+    font-size: 4em;
+    text-align: center;
+}
+
+.temperature-value p:hover{
+
+}
+
+.temperature-value span{
+    color: #293251;
+    font-size: 0.5em;
+}
+
+.temperature-description{
+
+}
+
+.temperature-description p{
+    padding: 10px;
+    margin: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.location{
+
+}
+
+.location p{
+    margin: 0;
+    padding-bottom: 15px;
+    color: #293251;
+    text-align: center;
+    font-size: 1em;
+}
+
+.temperature-min-max {
+  background-color: #fff;
+  width: 100%;
+  height:80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+.temperature-min-max h4 {
+    padding: 10px;
+    margin: 0;
+    color: #293251;
+    font-size: 1.2em;
+    text-align: center;
+}
+.temperature-min-max p {
+    padding: 10px;
+    margin: 0;
+    color: #293251;
+    font-size: 1em;
+    text-align: center;
+}
+
+.wind {
+  width: 100%;
+  height:80px;
+  flex-direction: row;
+
+}
+.wind h2{
+    padding-top: 10px;
+    margin: 0;
+    color: #293251;
+    font-size: 1.2em;
+    text-align: center;
+}
+.wind p{
+    padding-top: 10px;
+    margin: 0;
+    color: #293251;
+    font-size: 1em;
+    text-align: center;
+}
+
+.humidity {
+  background-color: #fff;
+  width: 100%;
+  height:80px;
+  flex-direction: row;
+
+}
+.humidity h2{
+    padding-top: 10px;
+    margin: 0;
+    color: #293251;
+    font-size: 1.2em;
+    text-align: center;
+}
+.humidity p{
+    padding-top: 10px;
+    margin: 0;
+    color: #293251;
+    font-size: 1em;
+    text-align: center;
+}
+
+
+.location-coordinate {
+  width: 100%;
+  height:auto;
+  flex-direction: row;
+}
+.location-lon-lat{
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+.location-lon, .location-lat{
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+.location-coordinate h2{
+    padding-top: 10px;
+    margin: 0;
+    color: #293251;
+    font-size: 1.2em;
+    text-align: center;
+}
+.location-coordinate p, .location-coordinate h4, .location-coordinate span{
+    padding: 10px;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #293251;
+    font-size: 0.8em;
+    text-align: center;
+}
+.location-coordinate p{
+    padding-left: 0px;
+}
+.location-coordinate span{
+    padding: 10px;
+}
+
+.sunrise-sunset {
+  background-color: #fff;
+  width: 100%;
+  height:auto;
+  padding-top: 5px;
+  flex-direction: row;
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+.sunrise2, .sunset2 {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 20px;
+
+}
+.sunrise-sunset img{
+  height: 30px;
+  padding: 5px;
+}
+.sunrise-sunset h4{
+    padding: 10px ;
+    margin: 0;
+    color: #293251;
+    font-size: 1em;
+    text-align: center;
+}
+.sunrise-sunset p{
+    padding: 0px 70px;
+    margin: 0;
+    color: #293251;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   font-size: 15px;
+    color: rgba(255, 255, 255, 0.85);
+}
+footer a {
+  color: rgba(255, 255, 255, 0.85);
+}
+footer a:hover {
+  color: #F7A71C;
+}
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.social_icon{
+  height: 28px;
+  padding: 5px;
+}
+.social_icon2{
+  height: 19px;
+  padding: 9px;
+}
+.social_icon:hover{
+  height: 31px;
+  padding: 2px;
+}
+.social_icon2:hover{
+  height: 22px;
+  padding: 6px;
+}
