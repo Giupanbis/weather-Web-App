@@ -1,4 +1,4 @@
 # weather-Web-App
 
 Web App meteo. 
-Richiesta API gestita con JavaScript tramite OpenWeatherMap.
+Richiesta API gestita con JavaScript tramite OpenWeatherMap. https://openweathermap.org
