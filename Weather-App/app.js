@@ -32,7 +32,6 @@ if('geolocation' in navigator){
     notificationElement.innerHTML = "<p>Il tuo Browser non supporta la geolocalizzazione, forse dovresti aggiornarlo!</p>";
 }
 
-// SHOW ERROR WHEN THERE IS AN ISSUE WITH GEOLOCATION SERVICE
 function showError(error){
     notificationElement.style.display = "block";
     notificationElement.innerHTML = `<p> ${error.message} </p>`;
@@ -46,7 +45,7 @@ function setPosition(position){
     getWeather(latitude, longitude);
 }
 
-// GET WEATHER FROM API PROVIDER - lat/lon
+// GET WEATHER FROM API - lat/lon
 function getWeather(latitude, longitude){
     let api = 'http://api.openweathermap.org/data/2.5/weather?lat=' + latitude + '&lon=' + longitude + '&appid=' + key + '&units=metric&lang=it';
 
@@ -79,7 +78,7 @@ function getWeather(latitude, longitude){
         });
 }
 
-// GET WEATHER FROM API PROVIDER - city
+// GET WEATHER FROM API - city
 $(function(){
 	$("#request").submit(function(){
 		getWeatherByCity( $("#city").val() );
